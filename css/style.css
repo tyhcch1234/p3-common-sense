@@ -191,9 +191,9 @@ button{font-family:inherit;font-size:inherit;cursor:pointer;border:none;backgrou
 
 /* 輸入 */
 .blank{
-  display:inline-flex;align-items:center;justify-content:center;min-width:88px;height:38px;
+  display:inline-block;text-align:center;min-width:88px;height:34px;line-height:32px;
   border-bottom:3px solid #8fb6d9;background:#f4faff;border-radius:6px 6px 0 0;
-  padding:0 10px;font-weight:700;font-size:17px;color:var(--c3);margin:0 3px;vertical-align:middle;
+  padding:0 10px;font-weight:700;font-size:17px;color:var(--c3);margin:0 3px;vertical-align:-5px;
 }
 .blank.empty{color:#a8bccd;font-weight:400}
 .blank.correct{border-color:var(--ok);background:#effbf5;color:#12845a}
@@ -281,7 +281,8 @@ textarea.txt{width:100%;min-height:96px;padding:12px 14px;border-radius:13px;bor
   .opts{grid-template-columns:1fr;gap:8px}
   .tf-row{flex-direction:row;gap:10px}
   .q-text{font-size:16px}
-  .blank{min-width:74px;height:36px;font-size:16px}
+  .blank{min-width:56px;height:30px;line-height:28px;font-size:15px;padding:0 7px;margin:0 2px;vertical-align:-4px}
+  .q-text{line-height:1.95}
   .pf-slot{width:72px;height:32px;font-size:13px;border-width:2px}
   .picfill{border-radius:14px}
   .steps{padding-bottom:10px}

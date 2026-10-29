@@ -345,7 +345,7 @@
       el.className = 'q';
       qEls.push(el);
       let html = it.text.replace(/\{(\d)\}/g, (m, n) =>
-        `<button class="blank empty" data-qi="${qi}" data-bi="${n}">＿＿</button>`);
+        `<button class="blank empty" data-qi="${qi}" data-bi="${n}"></button>`);
       el.innerHTML = `<div class="q-head"><div class="q-no">${qi + 1}</div><p class="q-text">${html}</p></div>
         <div class="fb"></div>`;
       host.appendChild(el);
@@ -357,7 +357,7 @@
           b.dataset.val = sel;
           beep('tap');
         } else if (!b.classList.contains('empty')) {
-          b.textContent = '＿＿'; b.classList.remove('correct', 'wrong');
+          b.textContent = ''; b.classList.remove('correct', 'wrong');
           b.dataset.val = ''; b.classList.add('empty');
           b.classList.remove('sel');
           $$('.blank', el).forEach(x => x.classList.remove('sel'));
